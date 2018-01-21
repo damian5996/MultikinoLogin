@@ -79,6 +79,16 @@ namespace MultikinoLogin.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        public string Imie { get; set; }
+
+        [Required]
+        public string Nazwisko { get; set; }
+
+        [Required]
+        public string Stanowisko { get; set; }
+
     }
 
     public class ResetPasswordViewModel
